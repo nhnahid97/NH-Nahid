@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e98c098d; /* Facebook-like blue */
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;  
+  margin-bottom: 5px;
+}
+
+.profile-header {
+  margin-top: 2px;
+}
+
+.profile-header img {
+  border-radius: 50%; /* Makes the profile picture round */
+  width: 130px;
+  height: 130px;
+  margin-bottom: 5px;
+}
+ h1
+{
+  color: rgb(255, 255, 255);
+  margin: 5px 0;
+}
+
+p {
+  color: #000000f2;
+  font: bold;
+  margin: 5px 0;
+}
+.posts {
+  margin: 20px;
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Adjust as needed */
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the icon size as needed */
+  height: 30px;
+}
+.round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.round-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.photography {
+    background-color: #ffd700; /* Yellow */
+}
+
+.design {
+    background-color: #00bfff; /* Blue */
+}
+
+.coding {
+    background-color: #32cd32; /* Green */
+}
+
+.other {
+    background-color: #ff69b4; /* Pink */
+}
+.nahid {
+    background-color: antiquewhite;
+}
+.rajshahirn{
+  background-color: #fff;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+/* For desktop view */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.round-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    margin: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* For mobile view */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coding {
+        margin-top: 10px; /* Create some space between Coding and the above buttons */
+    }
+}
+.about-section {
+    text-align: center;
+    padding: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation for fade-in */
+}
+
+.about-line {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%; /* Places the line in the middle */
+    border-top: 2px solid #333; /* Horizontal line */
+    z-index: -1;
+}
+
+
+.about-line h2 {
+    display: inline-block;
+    padding: 0 20px;
+    background: #fff; /* Background color behind the text */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
